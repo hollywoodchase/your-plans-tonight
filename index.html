@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Plans Tonight</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div id="q-page">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 id="question" class="display-4">Where should you go tonight?</h1><br><br><br><br>
+                <form class="form-inline">
+                    <div class="row">
+                        <div class="">
+                            <div class="input-group mb-3">
+                                <label for="City" class="sr-only">City</label>
+                                <input id="city-input" type="text" size="50" class="form-control" id="city"
+                                    placeholder="Location">
+                                <div class="input-group-append">
+                                    <button id="submit-button" class="btn btn-success" type="submit"><i
+                                            class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="eat-page">
+        <div class="container-fluid">
+            <div id="card-row" class="row">
+                <div class="col-sm-12">
+                    <div id="homepage" style="background-image: url(assets/images/magic-3587375_1920.png);">
+                        <p id="weather-report" class="card-text"></p>
+                        <p id="time" class="card-text"></p>
+
+                        <div class="card results-card results">
+                            <p id="words-left" class="words">A restaurant ⮑</p>
+                            <p id="restaurant-results" class="results"></p>
+                            <p id="event-results" class="results"></p>
+                            <p id="words-left" class="words">⮐ And an event </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="assets/scripts/script.js"></script>
+
+</body>
+
+</html>
